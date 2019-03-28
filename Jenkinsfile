@@ -6,7 +6,7 @@ node{
 		sh "echo 'Master'"
 	}
 	stage('Added Branch'){
-		sh "git checkout -b deploy-1.0 master"
+		sh "git checkout deploy"
 		sh "git tag -a v1.3"
 		sh "git commit -m 'Added Tag v1.3'"
 		sh "git checkout master"
